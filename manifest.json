@@ -1,0 +1,24 @@
+{
+  "manifest_version": 3,
+  "name": "Easy Time",
+  "version": "1.0",
+  "description": "在Chrome浏览器顶部显示当前时间的插件",
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "64": "icons/icon64.png",
+    "128": "icons/icon128.png"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": "icons/icon16.png"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "permissions": [
+    "storage",
+    "offscreen"
+  ],
+  "offline_enabled": true
+}

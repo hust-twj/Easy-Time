@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <style>
+    body {
+      width: 300px;
+      height: 300px;
+      padding: 10px;
+      font-family: Arial, sans-serif;
+    }
+    #clock-container {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    #digital-clock {
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 20px;
+      color: #4285f4;
+    }
+    #analog-clock {
+      position: relative;
+      width: 140px;
+      height: 140px;
+      margin: 0 auto;
+    }
+    .clock-face {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      background: white;
+      border: 6px solid #4285f4;
+    }
+    .hour-marker {
+      position: absolute;
+      font-size: 12px;
+      font-weight: bold;
+      color: #4285f4;
+      width: 20px;
+      height: 20px;
+      text-align: center;
+      line-height: 20px;
+    }
+    .hand {
+      position: absolute;
+      bottom: 50%;
+      left: 50%;
+      transform-origin: bottom;
+      background: #4285f4;
+    }
+    .hour-hand {
+      width: 4px;
+      height: 35px;
+    }
+    .minute-hand {
+      width: 2px;
+      height: 50px;
+    }
+    .second-hand {
+      width: 1px;
+      height: 55px;
+      background: #4285f4;
+    }
+    .center-dot {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 8px;
+      height: 8px;
+      background: #4285f4;
+      border-radius: 50%;
+      transform: translate(-50%, -50%);
+    }
+    #settings {
+      text-align: center;
+      margin-top: 10px;
+      color: #4285f4;
+    }
+    select {
+      margin: 5px;
+      padding: 5px;
+      cursor: pointer;
+      color: #4285f4;
+      border: 1px solid #4285f4;
+    }
+  </style>
+</head>
+<body>
+  <div id="clock-container">
+    <div id="digital-clock"></div>
+    <div id="analog-clock">
+      <div class="clock-face">
+        <div class="hour-marker" style="top: 8px; left: 50%; transform: translate(-50%, -50%);">12</div>
+        <div class="hour-marker" style="top: 50%; right: 8px; transform: translate(50%, -50%);">3</div>
+        <div class="hour-marker" style="bottom: 8px; left: 50%; transform: translate(-50%, 50%);">6</div>
+        <div class="hour-marker" style="top: 50%; left: 8px; transform: translate(-50%, -50%);">9</div>
+        <div class="hand hour-hand"></div>
+        <div class="hand minute-hand"></div>
+        <div class="hand second-hand"></div>
+        <div class="center-dot"></div>
+      </div>
+    </div>
+  </div>
+  <div id="settings">
+    <p>选择外显图标显示形式：</p>
+    <select id="icon-clock-type">
+      <option value="digital">数字形式</option>
+      <option value="analog">指针形式</option>
+    </select>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>
