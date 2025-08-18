@@ -1,10 +1,10 @@
 # 时间外显Chrome扩展
 
-这是一个Chrome浏览器扩展程序，方便在浏览器工具栏上显示当前时间。
+这是一个 [Chrome 浏览器扩展程序](https://chromewebstore.google.com/detail/easy-time/ajkjhejigonmfonbichldebnjlibdglj)，方便在浏览器工具栏上显示当前时间。
 
 ## 功能特点
 
-1. 在Chrome浏览器工具栏上显示一个时间图标，支持数字形式和指针形式
+1. 在 Chrome 浏览器工具栏上显示一个时间图标，支持数字形式和指针形式
 2. 点击图标可以打开时钟面板和设置页面
 
 
